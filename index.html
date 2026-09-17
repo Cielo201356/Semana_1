@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <meta charset="UFT-8">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mi tarjeta de presentacion</title>
         <link rel="stylesheet" href="styles.css">
@@ -23,13 +23,13 @@
         <main>
             <section id="sobre-mi">
                 <h2>Sobre mi</h2>
-                <img src="foto.jpg" alt="Retrato de Cielo Vizcaino sonriendo frente a una laptop" width="120" height="120">
+                <div class="avatar" aria-hidden="true">CV</div>
                 <p>Soy estudiante de Desarrollo en Plataformas. Me interesa crear paginas web accesibles y bien estructuradas.</p>
                 
             </section>
             <section id="habilidades">
                 <h2>Mis habilidades</h2>
-                <button id="toggleHabilidades" type="button">Mostrar/ocultar habilidades</button>
+                <button id="toggleHabilidades" type="button" aria-controls="listaHabilidades" aria-expanded="true">Mostrar/ocultar habilidades</button>
                 <ul id="listaHabilidades">
                     <li>HTML5 semantico</li>
                     <li>CSS3 basico</li>
@@ -37,14 +37,12 @@
                 </ul>
             </section>
         </main>
-        <footer> id="contacto"
+        <footer id="contacto">
             <p>Contacto: cielo.vizcaino@correo.com</p>
-            <p>&copy; <span id="anio"></span>Cielo Vizcaino</p>
+            <p>&copy; <span id="anio"></span> Cielo Vizcaino</p>
         </footer>
         <script src="script.js" defer></script>
-        
     </body>
-    </head>
 
 </html>
 
